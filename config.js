@@ -24,37 +24,28 @@ const CONFIG = {
         'acquireTimeout': 10000
     },
     'def_email': {
-        'from': `판도라<${process.env.MAILER_AUTHID}>`,
-        'replyTo': 'no-reply@pandora.tv',
-        'to': '조연호<joy.cho@pandora.tv>',
+        'from': `보내는사람<${process.env.MAILER_AUTHID}>`,
+        'replyTo': '',
+        'to': '{받는사람}',
         'subject': '',
         'text': '',
         'html': '',
     },
-    'email_to': '조연호<joy.cho@pandora.tv>',
-    'email_toall': '조연호<joy.cho@pandora.tv>',
-    //'email_toall': '고현태<jason.ko@pandora.tv>;탁선호<bryan.tak@pandora.tv>;조연호<joy.cho@pandora.tv>',
+    'email_to': '{받는사람}',
+    'email_toall': '{받는사람}',
+    //'email_toall': '{}',
     // DB HEALTH CHECK
     'mysql_list': [
-        {'host': 'gcpmaster.pandora.tv', 'database': 'pandora'},
-        {'host': 'gcpslave.pandora.tv', 'database': 'pandora'},
-        {'host': '34.64.53.61', 'database': 'pandora'},
-        {'host': '34.64.173.155', 'database': 'pandora'},
-        {'host': '34.64.161.164', 'database': 'pandora'},
-        {'host': '34.64.39.236', 'database': 'pandora'},
-        {'host': '34.64.154.246', 'database': 'pandora'},
+        {'host': '{DB IP or URL}', 'database': '{DB name}'},
+        {'host': '{DB IP or URL}', 'database': '{DB name}'},
+        {'host': '{DB IP or URL}', 'database': '{DB name}'},
+        {'host': '{DB IP or URL}', 'database': '{DB name}'},
     ],
     'http_list': {
-    // www.pandora.tv
-        '35.216.125.201':   'http://35.216.125.201/health/check.php',
-        '35.216.48.65':     'http://35.216.48.65/health/check.php',
-        '35.216.6.162':     'http://35.216.6.162/health/check.php',
-        '35.216.115.33':    'http://35.216.115.33/health/check.php',
-    // m.pandora.tv
-        '35.216.79.253':    'http://35.216.79.253/health/check.php',
-        '35.216.44.10':     'http://35.216.44.10/health/check.php',
-        '35.216.86.227':    'http://35.216.86.227/health/check.php',
-        '35.216.48.44':     'http://35.216.48.44/health/check.php',
+        '{SERVER IP or URL}':   '{HEALTH CHECK URL PATH}',
+        '{SERVER IP or URL}':   '{HEALTH CHECK URL PATH}',
+        '{SERVER IP or URL}':   '{HEALTH CHECK URL PATH}',
+        '{SERVER IP or URL}':   '{HEALTH CHECK URL PATH}',
     }
 };
 /*
