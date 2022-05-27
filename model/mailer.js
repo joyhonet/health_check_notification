@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 require("dotenv").config();
-require('./date');
+require('../model/date');
 //let nDate = new Date(date.getTime() + (date.getTimezoneOffset() * 60 * 1000) + (9 * 60 * 60 * 1000)).format('yyyy-MM-dd H:i:s');
 
 const senderInfo = {
