@@ -2,10 +2,10 @@
   "name": "health_check",
   "version": "1.0.0",
   "description": "",
-  "main": "cron.js",
+  "main": "src/cron.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cron": "pm2 start cron.js --watch"
+    "cron": "pm2 start src/cron.js --watch"
   },
   "keywords": [],
   "author": "",
